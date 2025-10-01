@@ -5,15 +5,15 @@ import cantera as ct
 
 
 # Simulation parameters
-p = ct.one_atm  # pressure [Pa]
+p = ct.one_atm*50  # pressure [Pa]
 Tin = 300.0  # unburned gas temperature [K]
-reactants = 'CH4:1, O2:2'  # premixed gas composition
+reactants = 'CH4:0.5, O2:2'  # premixed gas composition
 width = 0.03  # m
 loglevel = 1  # amount of diagnostic output (0 to 8)
 
 # Solution object used to compute mixture properties, set to the state of the
 # upstream fuel-air mixture
-gas = ct.Solution('h2o2.yaml')
+gas = ct.Solution('gri30.yaml')
 gas.TPX = Tin, p, reactants
 
 # Set up flame object
