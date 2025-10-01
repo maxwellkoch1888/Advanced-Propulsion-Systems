@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Cantera C++ Script",
+            "type": "shell",
+            "command": "call \"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\Tools\\VsDevCmd.bat\" && cl /EHsc /I \"C:\\Program Files\\Cantera\\include\" cantera\\ignition_time_delay.cpp /link /LIBPATH:\"C:\\Program Files\\Cantera\\lib\" cantera.lib",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$msCompile"]
+        }
+    ]
+}

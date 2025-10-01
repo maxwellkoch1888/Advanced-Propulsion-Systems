@@ -6,8 +6,8 @@ import cantera as ct
 
 # Simulation parameters
 p = ct.one_atm*50  # pressure [Pa]
-Tin = 300.0  # unburned gas temperature [K]
-reactants = 'CH4:0.5, O2:2'  # premixed gas composition
+Tin = 500.0  # unburned gas temperature [K]
+reactants = 'CH4:1.5, O2:2'  # premixed gas composition
 width = 0.03  # m
 loglevel = 1  # amount of diagnostic output (0 to 8)
 
